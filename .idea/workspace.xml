@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Filler" targetName="Filler" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a36a9ad0-c830-4a89-8ff9-0f548b6dbebc" name="Default Changelist" comment="add libft and main">
+      <change afterPath="$PROJECT_DIR$/src/clear_malloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/find_place_piece.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parcing.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm_run_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libft" beforeDir="false" afterPath="$PROJECT_DIR$/Libft" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libft/src/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/Libft/src/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/filler.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/filler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1faWxzvRCJz3pU1syaDdQRHjCm9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Filler" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Filler" TARGET_NAME="Filler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Filler" RUN_TARGET_NAME="Filler">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a36a9ad0-c830-4a89-8ff9-0f548b6dbebc" name="Default Changelist" comment="" />
+      <created>1596456934817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596456934817</updated>
+      <workItem from="1596456936021" duration="4000" />
+      <workItem from="1596456958813" duration="1580000" />
+      <workItem from="1596462240907" duration="1159000" />
+      <workItem from="1596540293157" duration="241000" />
+      <workItem from="1596626076257" duration="1769000" />
+      <workItem from="1596631657303" duration="185000" />
+      <workItem from="1596713504485" duration="2259000" />
+      <workItem from="1596796393629" duration="2482000" />
+      <workItem from="1596802661871" duration="11191000" />
+      <workItem from="1597404580036" duration="10036000" />
+      <workItem from="1597490983415" duration="16080000" />
+    </task>
+    <task id="LOCAL-00001" summary="add libft and main">
+      <created>1596457861896</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596457861896</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add libft and main" />
+    <option name="LAST_COMMIT_MESSAGE" value="add libft and main" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="744" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596811268092">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="744" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596811268092" />
+    <state width="2518" height="424" key="GridCell.Tab.0.bottom" timestamp="1597508896753">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597508896753" />
+    <state width="2518" height="424" key="GridCell.Tab.0.center" timestamp="1597508896751">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597508896751" />
+    <state width="2518" height="424" key="GridCell.Tab.0.left" timestamp="1597508896750">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597508896750" />
+    <state width="2518" height="424" key="GridCell.Tab.0.right" timestamp="1597508896752">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597508896752" />
+    <state width="2518" height="424" key="GridCell.Tab.1.bottom" timestamp="1597506165393">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1597506165393" />
+    <state width="2518" height="424" key="GridCell.Tab.1.center" timestamp="1597506165392">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1597506165392" />
+    <state width="2518" height="424" key="GridCell.Tab.1.left" timestamp="1597506165391">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1597506165391" />
+    <state width="2518" height="424" key="GridCell.Tab.1.right" timestamp="1597506165392">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2518" height="424" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1597506165392" />
+    <state x="868" y="462" key="IDE.errors.dialog" timestamp="1596457879267">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="868" y="462" key="IDE.errors.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1596457879267" />
+    <state x="789" y="359" key="SettingsEditor" timestamp="1596458419300">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="789" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1596458419300" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1596457865354">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1596457865354" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1597501529419">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1597501529419" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>39</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>29</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="(char*)(*var)" language="ObjectiveC" />
+        <watch expression="filler-&gt;plat.map[i][j]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
