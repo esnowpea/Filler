@@ -64,13 +64,3 @@ void	free_all(t_filler *filler)
 		free_null((void**)(&filler->gnl));
 	}
 }
-
-void	*terminate(char *str, t_filler *filler)
-{
-	free_all(filler);
-	while (get_next_line(filler->fd, &filler->gnl) > 0)
-		free_null((void**)(&filler->gnl));
-	free_null((void**)(&filler));
-	ft_printf_fd(2, "%s\n", str);
-	return (NULL);
-}

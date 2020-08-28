@@ -6,42 +6,44 @@
 /*   By: esnowpea <esnowpea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/15 15:31:45 by esnowpea          #+#    #+#             */
-/*   Updated: 2020/08/15 19:03:36 by esnowpea         ###   ########.fr       */
+/*   Updated: 2020/08/25 13:07:18 by esnowpea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
 
-void	one_pixel_change_weight(t_plat *plat, int i, int j, int weight)
+t_count	count_null(void)
 {
-	if (i > 0 && plat->map[i - 1][j].weight == -1)
-		plat->map[i - 1][j].weight = weight + 1;
-	if (i < (plat->height - 1) && plat->map[i + 1][j].weight == -1)
-		plat->map[i + 1][j].weight = weight + 1;
-	if (j > 0 && plat->map[i][j - 1].weight == -1)
-		plat->map[i][j - 1].weight = weight + 1;
-	if (j < (plat->width - 1) && plat->map[i][j + 1].weight == -1)
-		plat->map[i][j + 1].weight = weight + 1;
+	t_count	count;
+
+	count.count_my = 0;
+	count.count_star = 0;
+	count.count_en = 0;
+	count.weight = 0;
+	return (count);
 }
 
-int		pixel_change_weight(t_plat *plat, char pixel, int weight)
+t_count	pixel_selection_check_part(t_filler *filler, int x, int y)
 {
 	int		i;
 	int		j;
-	int		count;
+	t_count	count;
 
-	count = 0;
+	count = count_null();
 	i = 0;
-	while (i < plat->height)
+	while (i < filler->piece.height && (i + x) < filler->plat.height)
 	{
 		j = 0;
-		while (j < plat->width)
+		while (j < filler->piece.width && (j + y) < filler->plat.width)
 		{
-			if (plat->map[i][j].pixel == pixel &&
-			plat->map[i][j].weight == weight)
+			if (filler->piece.map[i][j] == '*' && (x + i >= 0) && (y + j >= 0))
 			{
-				one_pixel_change_weight(plat, i, j, weight);
-				count++;
+				if (filler->plat.map[i + x][j + y].pixel == filler->en_pixel)
+					count.count_en++;
+				if (filler->plat.map[i + x][j + y].pixel == filler->my_pixel)
+					count.count_my++;
+				count.weight += filler->plat.map[i + x][j + y].weight;
+				count.count_star++;
 			}
 			j++;
 		}
@@ -50,52 +52,16 @@ int		pixel_change_weight(t_plat *plat, char pixel, int weight)
 	return (count);
 }
 
-void	map_change_weight(t_plat *plat, char en_pixel)
-{
-	int		i;
-
-	pixel_change_weight(plat, en_pixel, 0);
-	i = 1;
-	while (pixel_change_weight(plat, '.', i))
-		i++;
-}
-
 void	pixel_selection_check(t_filler *filler, int x, int y)
 {
-	int		i;
-	int		j;
-	int		count_my;
-	int		weight;
-	int		count_star;
+	t_count	count;
 
-	count_my = 0;
-	weight = 0;
-	count_star = 0;
-	i = 0;
-	while (i < filler->piece.height && (i + x) < filler->plat.height)
+	count = pixel_selection_check_part(filler, x, y);
+	if (count.count_my == 1 && count.count_star == filler->piece.star &&
+	count.count_en == 0 &&
+	(count.weight < filler->out_weight || filler->out_weight == 0))
 	{
-		j = 0;
-		while (j < filler->piece.width && (j + y) < filler->plat.width)
-		{
-			if (filler->piece.map[i][j] == '*' && (x + i > 0) && (y + j > 0) &&
-			filler->plat.map[i + x][j + y].pixel == filler->my_pixel)
-				count_my++;
-			if (filler->piece.map[i][j] == '*' && (x + i > 0) && (y + j > 0) &&
-				filler->plat.map[i + x][j + y].pixel == filler->en_pixel)
-				return ;
-			if (filler->piece.map[i][j] == '*' && (x + i > 0) && (y + j > 0))
-			{
-				weight += filler->plat.map[i + x][j + y].weight;
-				count_star++;
-			}
-			j++;
-		}
-		i++;
-	}
-	if (count_my == 1 && count_star == filler->piece.star &&
-	(weight < filler->out_weight || filler->out_weight == 0))
-	{
-		filler->out_weight = weight;
+		filler->out_weight = count.weight;
 		filler->out_x = x;
 		filler->out_y = y;
 	}
@@ -125,7 +91,7 @@ void	find_place_piece(t_filler *filler)
 	int		i;
 	int		j;
 
-	map_change_weight(&filler->plat, filler->en_pixel);
+	map_change_weight(&filler->plat);
 	i = 0;
 	while (i < filler->plat.height)
 	{

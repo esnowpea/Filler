@@ -6,11 +6,12 @@
 /*   By: esnowpea <esnowpea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/07 16:37:22 by esnowpea          #+#    #+#             */
-/*   Updated: 2020/08/15 19:23:18 by esnowpea         ###   ########.fr       */
+/*   Updated: 2020/08/25 13:07:32 by esnowpea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "filler.h"
+#include <fcntl.h>
 
 int			parc_player(t_filler *filler)
 {
@@ -44,7 +45,7 @@ t_filler	*init_filler(void)
 {
 	t_filler	*filler;
 
-	if (!(filler = (t_filler*)malloc(sizeof(t_filler))))
+	if (!(filler = (t_filler*)ft_memalloc(sizeof(t_filler))))
 		return (0);
 	reset_filler(filler);
 	filler->fd = 0;
@@ -55,13 +56,4 @@ t_filler	*init_filler(void)
 		return (0);
 	}
 	return (filler);
-}
-
-void		make_null_pointer(void **array, int n)
-{
-	int		i;
-
-	i = 0;
-	while (i < n)
-		array[i++] = NULL;
 }

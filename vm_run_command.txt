@@ -1,1 +1,1 @@
-./filler_vm -p1 players/carli.filler -p2 ./esnowpea.filler -v -f maps/map00
+./filler_vm -p1 players/carli.filler -p2 ./esnowpea.filler -v -f maps/map00 | ./vs
