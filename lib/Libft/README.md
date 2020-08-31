@@ -86,4 +86,3 @@ Run `make`, an libft.a should compile directly
 **Added after**
 
 * [get_next_line](/src/get_next_line.c)
-* [ft_printf](/src/ft_printf.c)
