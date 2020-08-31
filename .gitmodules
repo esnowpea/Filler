@@ -4,3 +4,6 @@
 [submodule "visual/Libvisual"]
 	path = visual/Libvisual
 	url = https://github.com/esnowpea/Libvisual.git
+[submodule "Libftprintf"]
+	path = Libftprintf
+	url = https://github.com/esnowpea/Libftprintf.git
