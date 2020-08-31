@@ -13,14 +13,14 @@ target_include_directories(visual_filler PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Lib
 set(FT ${CMAKE_CURRENT_SOURCE_DIR}/Libft/libft.a)
 target_link_libraries(visual_filler ${FT})
 
-target_include_directories(visual_filler PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Libvisual/minilibx_macos/inc)
+target_include_directories(visual_filler PRIVATE ../lib/Libvisual/minilibx_macos/inc)
 #find_library(MLX mlx)
-set(MLX ${CMAKE_CURRENT_SOURCE_DIR}/Libvisual/minilibx_macos/libmlx.a)
+set(MLX ../lib/Libvisual/minilibx_macos/libmlx.a)
 target_link_libraries(visual_filler ${MLX})
 
-target_include_directories(visual_filler PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Libvisual/inc)
+target_include_directories(visual_filler PRIVATE ../lib/Libvisual/inc)
 #find_library(VISUAL visual)
-set(VISUAL ${CMAKE_CURRENT_SOURCE_DIR}/Libvisual/libvisual.a)
+set(VISUAL ../lib/Libvisual/libvisual.a)
 target_link_libraries(visual_filler ${VISUAL})
 
 target_link_libraries(visual_filler "-framework OpenGL")
